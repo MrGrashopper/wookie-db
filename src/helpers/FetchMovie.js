@@ -12,7 +12,6 @@ const FetchMovie = (param) => {
     useEffect(() => {    
         const fetchMovie = async() => { 
             const response = await axios.get(process.env.REACT_APP_BASE_URL + query, config)
-            console.log(response)
             if (response.status == 200) {
                 response.data.movies.reduce((acc, current) => {
                     if (current.title === param) {
@@ -22,7 +21,6 @@ const FetchMovie = (param) => {
             }            
         }
         fetchMovie();
-        console.log(movie)
     }, [])
 
     
