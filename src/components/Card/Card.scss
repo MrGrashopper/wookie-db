@@ -1,0 +1,42 @@
+.card__container {
+    padding-top: 1rem;
+
+    a:-webkit-any-link {
+        text-decoration: none;
+    }
+}
+
+.card {
+    width: 10rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black !important;
+
+    img {
+        max-height: 13rem;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.card__info {
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    .card__title {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .card__icon {
+        color: #f5c518;
+        font-size: 1.5rem;
+    }
+
+    .card__rating {
+        font-size: 1rem;
+    }
+}

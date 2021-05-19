@@ -1,0 +1,16 @@
+h2 {
+    color: white;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.genre {
+    padding: 3rem;
+}
+
+.genre__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}
