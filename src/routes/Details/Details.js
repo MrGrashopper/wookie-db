@@ -10,7 +10,7 @@ function Details() {
 
     return (
         <div>
-            { !(data.movie == null) && 
+            { (!(data.movie == null) && (data.movie != 404)) && 
                 <>
                 <div className="details">
                     <div className="details__left">
@@ -42,9 +42,11 @@ function Details() {
                     </div>
                      
                 </div>
-                {/* <h2>{data.movie.title}</h2> 
-                <h2>{data.movie.cast.join(', ')}</h2> */}
                 </>
+            }
+
+            {  data.movie == 404 && 
+                <div className="details"><h2>MOVIE NOT FOUND</h2></div>
             }
         </div>
     )

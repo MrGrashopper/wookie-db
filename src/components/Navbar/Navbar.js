@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.scss'; 
 import { Link } from "react-router-dom";
+import Search from "../Search/Search";
 
 function Navbar() {
     return (
@@ -10,6 +11,7 @@ function Navbar() {
                     <h1>WOOKIEDb</h1>
                 </Link>
             </div>
+            <Search/>
         </div>
     )
 }

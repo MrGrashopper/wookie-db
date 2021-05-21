@@ -1,7 +1,10 @@
 .navbar {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #121212;
 
     a:-webkit-any-link {
         text-decoration: none;
@@ -10,6 +13,7 @@
 
 .navbar__logo {
     width: 9rem;
+    height: 1.9rem;
     margin-left: 0.5rem;
     background-color: #f5c518;
     border-radius: 4px;
