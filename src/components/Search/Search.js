@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Search.scss'; 
 import SearchIcon from '@material-ui/icons/Search';
 import FormControl from '@material-ui/core/FormControl';
@@ -20,6 +20,7 @@ function Search() {
                         className="search__icon" 
                         onClick={handleSearch}/>
                     <input 
+                        data-testid="input"
                         onChange={  (e) => {setInputValue(e.target.value)} }
                         onKeyUp={handleSearch}
                         type="text"/>                

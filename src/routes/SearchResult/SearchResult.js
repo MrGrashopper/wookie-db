@@ -7,8 +7,6 @@ import MovieCard from "../../components/Card/MovieCard";
 function SearchResult() {
     const { search } = useParams();
     const data = SearchMovie(search);
-    console.log(data)
-    //debugger;
 
     return (
         <div className="searchResult">

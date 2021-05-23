@@ -10,7 +10,10 @@ function MovieCard({title, image}) {
                 <Card className="card">
                     <img src={image} alt=""/>
                     <div className="card__info">
-                        <h3 className="card__title">{ title }</h3>
+                        <h3 
+                            data-testid="testH3"
+                            className="card__title">{ title }
+                        </h3>
                     </div>
                 </Card>            
             </Link>

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss'; 
 import { Link } from "react-router-dom";
 import Search from "../Search/Search";
 
 function Navbar() {
+
     return (
         <div className="navbar">
             <div className="navbar__logo">
