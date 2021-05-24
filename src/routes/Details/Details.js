@@ -5,6 +5,7 @@ import FetchMovie from "../../helpers/FetchMovie";
 import StarIcon from '@material-ui/icons/Star';
 
 function Details() {
+    // display details page of an movie
     const { title } = useParams();
     const data = FetchMovie(title);
 

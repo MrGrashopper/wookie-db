@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const FetchMovie = (param) => {
+    // get specific movie details by linking and fetch from via API 
     const [movie, setMovie] = useState(null);
 
     const config = {

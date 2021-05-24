@@ -8,6 +8,7 @@ function Search() {
     const [inputValue, setInputValue] = useState(null);
     const history = useHistory();
 
+    // push to movie url when typing in search
     const handleSearch = () => {
         history.push("/search/" + inputValue);
     }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const SearchMovie = (search) => {
+    // when seraching a movie fetch API for response
     const [movies, setMovies] = useState();
     const config = {
         headers: { Authorization: `Bearer ${process.env.REACT_APP_WOOKIE_KEY}` }

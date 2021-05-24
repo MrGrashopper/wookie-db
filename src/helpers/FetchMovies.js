@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const FetchMovies = () => {
+    // fetch movies from API and store in movies state
     const [movies, setMovies] = useState();
 
     const config = {

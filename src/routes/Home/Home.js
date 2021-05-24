@@ -7,6 +7,7 @@ function Home() {
     const data = FetchMovies();
     const genres = [];
 
+    // sort data by genre and display all avaiable movies
     data.movies?.reduce((acc, current) => {
         current.genres.reduce((acc, currentGenre) => {
             if (!genres.includes(currentGenre)) {
