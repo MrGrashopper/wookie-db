@@ -13,7 +13,9 @@ function Home() {
                 genres.push(currentGenre)
             }
         })
+        genres.sort();
     });
+    
 
     return (
         

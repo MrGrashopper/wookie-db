@@ -1,5 +1,5 @@
 .card__container {
-    padding-top: 1rem;
+    padding: 1rem;
 
     a:-webkit-any-link {
         text-decoration: none;
@@ -14,7 +14,7 @@
     background-color: black !important;
 
     img {
-        max-height: 13rem;
+        max-height: 15rem;
         width: 100%;
         object-fit: contain;
     }
